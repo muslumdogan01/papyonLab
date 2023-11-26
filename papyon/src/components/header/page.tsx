@@ -1,10 +1,13 @@
+"use client";
 import React from "react";
 import HeaderMenu from "./menu";
-
+import { UseScrollPosition } from "../scroll/UseScrollPosition";
 
 const Header = () => {
+
+
   return (
-    <div className="flex flex-col justify-center items-center w-full">
+    <div className="w-full flex justify-center items-center">
       <HeaderMenu />
     </div>
   );
