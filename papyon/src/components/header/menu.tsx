@@ -17,7 +17,7 @@ const HeaderMenu = () => {
     <div className="flex w-full h-16 justify-center items-center mt-5">
       <div
         className={classNames(
-          scrollPosition > 0 ? "backdrop-blur-sm px-12	h-16 rounded-[70px]" : "bg-transparent",
+          scrollPosition > 0 ? "backdrop-blur-sm z-[100] px-12 h-16 rounded-[70px]" : "bg-transparent z-[100]",
           "  flex flex-col justify-center items-center fixed"
         )}
       >

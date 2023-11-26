@@ -16,6 +16,15 @@
   }
 }
 
-body {
+body,
+html {
   background-color: #00030f;
+}
+
+#header-gradient {
+  border-image: linear-gradient(#96B8F8,#C583D4) 30;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 90px !important;
+
 }
