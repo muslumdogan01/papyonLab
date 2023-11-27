@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Milestones from "../content/usersInformation/milestones";
 
 const HeaderDescription = () => {
   return (
@@ -23,17 +24,7 @@ const HeaderDescription = () => {
             className="z-[60] bg-gradient-to-b from-[#00D1FF00] to-[#00D1FF]"
           ></div>
         </div>
-        <div className="w-full flex justify-center items-center z-[20] relative">
-          <div className="w-full flex justify-center items-center absolute">
-            <h1 className="mt-4 bg-clip-text bg-gradient-to-r  from-[#91E998] to-[#6366F7] text-transparent text-[60px] font-semibold leading-[74px] tracking-[-3px] ">Milestones</h1>
-          </div>
-          <Image
-           src="/images/milestones.png"
-            alt="Milestones"
-            width={1250}
-            height={372}
-          />
-        </div>
+          <Milestones/>
       </div>
       <div className="flex justify-center items-center absolute top-28 left-0 w-full z-30">
         <Image

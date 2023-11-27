@@ -22,7 +22,9 @@ html {
 }
 
 #header-gradient {
-  box-shadow: inset 0 0 0 2px transparent, inset 0 0 0 4px transparent, inset 0 0 0 6px transparent, inset 0 0 0 8px transparent, 0 0 0 2px #C583D4, 0 0 0 4px #96B8F8;
+  box-shadow: inset 0 0 0 2px transparent, inset 0 0 0 4px transparent,
+    inset 0 0 0 6px transparent, inset 0 0 0 8px transparent, 0 0 0 2px #c583d4,
+    0 0 0 4px #96b8f8;
   border-radius: 90px !important;
 }
 
@@ -55,3 +57,4 @@ html {
     transform: translateY(100%); /* Yukarıda tekrar başlayacak */
   }
 }
+
