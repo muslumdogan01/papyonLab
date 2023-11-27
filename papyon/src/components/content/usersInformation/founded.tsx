@@ -17,7 +17,7 @@ const Founded = () => {
               setReached(true);
               let currentCount = 0;
               const interval = setInterval(() => {
-                if (currentCount < 1011 * 4) {
+                if (currentCount < 2022) {
                   setCount((prevCount) => {
                     currentCount += 1;
                     return prevCount + 1;

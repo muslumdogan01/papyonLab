@@ -17,7 +17,7 @@ const AppDownloads = () => {
           setReached(true);
           let currentCount = 0;
           const interval = setInterval(() => {
-            if (currentCount < 375 * 4) {
+            if (currentCount < 750) {
               setCount((prevCount) => {
                 currentCount += 1;
                 return prevCount + 1;

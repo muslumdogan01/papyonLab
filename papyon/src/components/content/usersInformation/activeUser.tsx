@@ -19,7 +19,7 @@ const ActiveUser = () => {
               setReached(true);
               let currentCount = 0;
               const interval = setInterval(() => {
-                if (currentCount < 100*2) {
+                if (currentCount < 100) {
                   setCount((prevCount) => {
                     currentCount += 1;
                     return prevCount + 1;
