@@ -7,11 +7,13 @@ const HeaderMenu = () => {
   const scrollPosition = UseScrollPosition();
   console.log("Scroll position", scrollPosition);
 
-  function classNames(...classes) {
-    return classes.filter(Boolean).join("");
+  // function classNames(...classes) {
+  //   return classes.filter(Boolean).join("");
+  // }
+
+  function classNames(...classes: (string | undefined | null | false | 0)[]): string {
+    return classes.filter(Boolean).join(" ");
   }
-
-
 
   return (
     <div className="flex w-full h-16 justify-center items-center mt-5">
