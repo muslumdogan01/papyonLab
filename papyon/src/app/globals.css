@@ -26,3 +26,32 @@ html {
   border-radius: 90px !important;
 }
 
+#line-container {
+  height: 200px; /* Çizginin görüneceği alanın yüksekliği */
+  overflow: hidden; /* Taşma durumunda içeriği gizle */
+
+  /* Çizgiyi dikey olarak ortalamak için gereken stil */
+  display: flex;
+  align-items: center;
+}
+
+#line {
+  width: 1px; /* Çizgi genişliği */
+  height: 187px; /* Çizgi uzunluğu */
+
+  /* CSS Animasyonu */
+  animation: moveDown 3s linear infinite;
+}
+
+/* CSS Animasyonu tanımı */
+@keyframes moveDown {
+  50% {
+    transform: translateY(-100%); /* Yukarıda başlayacak */
+  }
+  50% {
+    transform: translateY(100%); /* Aşağıda sonlanacak */
+  }
+  100% {
+    transform: translateY(100%); /* Yukarıda tekrar başlayacak */
+  }
+}
