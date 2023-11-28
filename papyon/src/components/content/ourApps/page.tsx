@@ -1,12 +1,15 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import AppsHeader from "./appsHeader";
+import AppsContent from "./appsContent/appsContent";
 
 const OurApps = () => {
   return (
-    <div className='flex'>
-        <Image src="/ourAppsBg.svg" alt='ourApps' width={1200} height={400} className=''/>
-    </div>
-  )
-}
+    <>
+      <AppsHeader />
+      <AppsContent />
+    </>
+  );
+};
 
-export default OurApps
+export default OurApps;

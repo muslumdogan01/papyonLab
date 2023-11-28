@@ -6,10 +6,10 @@ const HeaderDescription = () => {
   return (
     <>
       <div className="flex justify-center flex-col items-center absolute top-[250px] left-0 w-full z-[60]">
-        <span className="text-[90px] font-semibold tracking-[-3px] text-center text-white">
+        <span className="md:text-[90px] font-semibold md:tracking-[-3px] text-center text-white">
           We Make Mobile Apps <br /> in the Field of
           <span id="header-gradient" className=" text-center ml-[15px] ">
-            <span className="bg-clip-text bg-gradient-to-r  from-[#C583D4] to-[#96B8F8] text-transparent text-[90px] font-semibold py-1 px-8 tracking-[-3px] ">
+            <span className="bg-clip-text bg-gradient-to-r  from-[#C583D4] to-[#96B8F8] text-transparent md:text-[90px] font-semibold py-1 px-8 md:tracking-[-3px] ">
               Health
             </span>
           </span>
