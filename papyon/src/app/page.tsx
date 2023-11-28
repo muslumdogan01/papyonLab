@@ -3,6 +3,7 @@ import AppInformation from "@/components/content/appInformation/page";
 import HeaderBackground from "@/components/header/headerBg";
 import HeaderDescription from "@/components/header/headerDesc";
 import Header from "@/components/header/page";
+import OurApps from "@/components/content/ourApps/page";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="container mx-auto min-h-screen text-white">
         <UsersInformation/>
         <AppInformation/>
+        <OurApps/>
       </div>
     </main>
   );

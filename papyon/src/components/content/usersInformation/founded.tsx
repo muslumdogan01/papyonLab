@@ -20,7 +20,7 @@ const Founded = () => {
                 if (currentCount < 2022) {
                   setCount((prevCount) => {
                     currentCount += 1;
-                    return prevCount + 1;
+                    return prevCount + 2;
                   });
                 } else {
                   clearInterval(interval);

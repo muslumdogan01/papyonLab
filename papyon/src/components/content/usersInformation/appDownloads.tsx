@@ -20,12 +20,12 @@ const AppDownloads = () => {
             if (currentCount < 750) {
               setCount((prevCount) => {
                 currentCount += 1;
-                return prevCount + 1;
+                return prevCount + 2;
               });
             } else {
               clearInterval(interval);
             }
-          }, 10); // Sayıyı arttırma hızı (ms cinsinden)
+          }, 1); // Sayıyı arttırma hızı (ms cinsinden)
         }
       }
     };

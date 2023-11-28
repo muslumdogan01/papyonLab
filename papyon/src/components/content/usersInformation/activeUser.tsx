@@ -18,16 +18,20 @@ const ActiveUser = () => {
             if (scrollPosition + windowHeight >= targetOffset && !reached) {
               setReached(true);
               let currentCount = 0;
+           
               const interval = setInterval(() => {
                 if (currentCount < 100) {
+                  console.log('current count reached', currentCount);
+                  
                   setCount((prevCount) => {
+                    console.log('prevCount count reached', prevCount);
                     currentCount += 1;
-                    return prevCount + 1;
+                    return prevCount + 2;
                   });
                 } else {
                   clearInterval(interval);
                 }
-              }, 10); // Sayıyı arttırma hızı (ms cinsinden)
+              }, 1); // Sayıyı arttırma hızı (ms cinsinden)
             }
           }
         };
