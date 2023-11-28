@@ -1,6 +1,6 @@
 import React from "react";
 
-const Oria = () => {
+const OriaApps = () => {
   return (
     <div className="flex justify-between items-center">
       <h1 className="font-semibold text-[90px] leading-[111px] tracking-[-3px] bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent">
@@ -13,4 +13,4 @@ const Oria = () => {
   );
 };
 
-export default Oria;
+export default OriaApps;
