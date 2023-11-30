@@ -58,3 +58,43 @@ html {
   }
 }
 
+#content-us {
+  background-image: linear-gradient(
+    to right top,
+    #1e1d37,
+    #282754,
+    #313273,
+    #3b3c94,
+    #4647b5,
+    #5e4cbf,
+    #7451c9,
+    #8a56d2,
+    #a15ac6,
+    #b160bb,
+    #bb69b1,
+    #c273aa
+  );
+}
+
+/* canvas{
+  background-color: transparent !important;
+  padding-left: 169px !important;
+  padding-right: 169px !important;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+
+} */
+
+#contact-us{
+  margin-top: 51px !important;
+  background: url("../../public/images/button.png") no-repeat center;
+  width: 480px !important;
+  background-position: center;
+  border-radius: 75px !important;
+  height: 125px !important;
+  cursor: pointer !important;
+  z-index: 30 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

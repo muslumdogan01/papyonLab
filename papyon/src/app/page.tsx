@@ -4,6 +4,7 @@ import HeaderBackground from "@/components/header/headerBg";
 import HeaderDescription from "@/components/header/headerDesc";
 import Header from "@/components/header/page";
 import OurApps from "@/components/content/ourApps/page";
+import Footer from "@/components/footer/page";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <UsersInformation/>
         <AppInformation/>
         <OurApps/>
+        <Footer/>
       </div>
     </main>
   );
