@@ -16,7 +16,7 @@ export default function Home() {
           <Header />
         </div>
       </div>
-      <div className="container mx-auto min-h-screen">
+      <div className=" min-h-screen">
         <UsersInformation/>
         <AppInformation/>
         <OurApps/>
