@@ -5,9 +5,7 @@ import { UseScrollPosition } from "../scroll/UseScrollPosition";
 import { useViewportScroll } from 'framer-motion';
 import { motion, useAnimation } from 'framer-motion';
 
-interface ExampleProps {
-  buttonRef: Ref<HTMLButtonElement>
-}
+
 
 const FooterContent = () => {
   const scrollPosition = UseScrollPosition();
