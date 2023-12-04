@@ -5,7 +5,7 @@ import Logo from "./logo";
 import MenuDropdown from "./menuDropdown";
 
 const HeaderMenu = () => {
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
   const scrollPosition = UseScrollPosition();
 
   function classNames(
