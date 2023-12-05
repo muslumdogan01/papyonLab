@@ -13,7 +13,7 @@ const BmiBuddy = () => {
       onMouseLeave={() => {
         setShowModal(false);
       }}
-      className="group/edit relative transition duration-500 ease-in-out cursor-pointer py-[50px] border-b  border-white border-opacity-10  flex  hover:bg-opacity-10 hover:bg-white justify-between items-center"
+      className="group/edit relative transition duration-500 ease-in-out hover:border-none cursor-pointer py-[50px] border-b  border-white border-opacity-10  flex  hover:bg-opacity-10 hover:bg-white justify-between items-center"
       >
       <div className="container mx-auto flex  justify-between items-center">
       <h1 className="font-semibold text-[90px] leading-[111px] tracking-[-3px] group-hover/edit:from-[#D37AE9] group-hover/edit:to-[#7E36FC] bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent ">

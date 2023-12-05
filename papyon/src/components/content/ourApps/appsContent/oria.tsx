@@ -13,7 +13,7 @@ const OriaApps = () => {
         onMouseLeave={() => {
           setShowModal(false);
         }}
-        className="group/edit relative cursor-pointer h-full border-b transition duration-500 ease-in-out border-white border-opacity-10  flex hover:bg-opacity-10 hover:bg-white  justify-between items-center"
+        className="group/edit relative cursor-pointer h-full border-b transition duration-500 ease-in-out hover:border-none border-white border-opacity-10  flex hover:bg-opacity-10 hover:bg-white  justify-between items-center"
       >
           <div className="container mx-auto flex h-full justify-between py-[50px] w-full items-center">
           <h1 className="font-semibold text-[90px] leading-[111px] tracking-[-3px] group-hover/edit:from-[#D37AE9] group-hover/edit:to-[#7E36FC] bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent ">

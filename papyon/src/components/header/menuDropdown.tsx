@@ -40,12 +40,7 @@ const MenuDropdown: React.FC<DropdownProps> = ({ setShowDropdown }) => {
           </span>
         </li>
         <li className=" hover:bg-[#EDEDED] w-[230px] h-[70px] flex cursor-pointer p-[10px] rounded-[14px] transition duration-500 ease-in-out">
-          <Image
-            src="/naricon.svg"
-            alt="girl"
-            width={50}
-            height={50}
-          />
+          <Image src="/naricon.svg" alt="girl" width={50} height={50} />
           <span className="flex flex-col ml-[10px] ">
             <span className="font-medium text-base  leading-6 text-[#00030F] ">
               Naricon

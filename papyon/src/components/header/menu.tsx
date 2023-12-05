@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { UseScrollPosition } from "../scroll/UseScrollPosition";
 import Logo from "./logo";
 import MenuDropdown from "./menuDropdown";
