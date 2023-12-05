@@ -1,12 +1,12 @@
 import React from "react";
-import Roosefy from "./roosefy/roosefy";
+import Roosefy from "./roosefy";
 import BmiBuddy from "./bmi";
-import Overhead from "./overhead";
+import Overhead from "./lenzai";
 import OriaApps from "./oria";
 
 const AppsContent = () => {
   return (
-    <div className="space-y-[100px] mt-20 w-full flex flex-col px-12">
+    <div className="mt-20 w-full flex flex-col">
       <Roosefy />
       <BmiBuddy />
       <OriaApps />

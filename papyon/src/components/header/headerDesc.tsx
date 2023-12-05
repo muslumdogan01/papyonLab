@@ -28,7 +28,7 @@ const HeaderDescription = () => {
       </div>
       <div className="flex justify-center items-center absolute top-28 left-0 w-full z-30">
         <Image
-          src="/images/iPhone.png"
+          src="/images/apple.png"
           alt="phone"
           width={850}
           height={769}

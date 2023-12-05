@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const RoosefyItems = () => {
+const ContentItems = () => {
   return (
     <div className="px-[60px] pt-[32px] flex flex-col justify-center items-center w-full overflow-hidden">
       <div className="relative w-full min-h-screen overflow-hidden rounded-tl-[30px] ">
@@ -18,7 +18,7 @@ const RoosefyItems = () => {
   );
 };
 
-export default RoosefyItems;
+export default ContentItems;
 
 
 //border-[10px] border-black opacity-30 rounded-tr-[30px] 
