@@ -1,5 +1,5 @@
 import React from "react";
-import Roosefy from "./roosefy";
+import Roosefy from "./roosefy/roosefy";
 import BmiBuddy from "./bmi";
 import Overhead from "./overhead";
 import OriaApps from "./oria";

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Logo = () => {
   return (
-    <Image src="/images/papyon.png" width={218} height={26} alt="papyon" />
+    <Image src="/logo.svg" width={218} height={26} alt="papyon" />
   );
 };
 

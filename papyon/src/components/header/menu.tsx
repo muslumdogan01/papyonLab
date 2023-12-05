@@ -25,8 +25,9 @@ const HeaderMenu = () => {
         )}
       >
         <ul className="flex md:space-x-9 lg:space-x-24 ">
-          <li className="font-medium text-base leading-6 text-white cursor-pointer hover:underline">
+          <li className="font-medium text-base leading-6 text-white cursor-pointer relative">
             ABOUT US
+            <span className="absolute top-1/2 -translate-y-1/2 left-1/2 transform -translate-x-1/2 hover:rounded-[10px] text-white z-50 w-[151px] h-11  hover:border-opacity-10 hover:border border-white hover:bg-white  hover:bg-opacity-10"></span>
           </li>
           <li
             className="font-medium text-base leading-6 text-white cursor-pointer  relative"
@@ -55,11 +56,13 @@ const HeaderMenu = () => {
           <li>
             <Logo />
           </li>
-          <li className="font-medium text-base leading-6 text-white cursor-pointer hover:underline ">
+          <li className="font-medium text-base leading-6 text-white cursor-pointer relative">
             PAPYON BLOG
+            <span className="absolute top-1/2 -translate-y-1/2 left-1/2 transform -translate-x-1/2 hover:rounded-[10px] text-white z-50 w-[151px] h-11  hover:border-opacity-10 hover:border border-white hover:bg-white  hover:bg-opacity-10"></span>
           </li>
-          <li className="font-medium text-base leading-6 text-white cursor-pointer hover:underline">
+          <li className="font-medium text-base leading-6 text-white cursor-pointer relative">
             CONTACT US
+            <span className="absolute top-1/2 -translate-y-1/2 left-1/2 transform -translate-x-1/2 hover:rounded-[10px] text-white z-50 w-[151px] h-11  hover:border-opacity-10 hover:border border-white hover:bg-white  hover:bg-opacity-10"></span>
           </li>
         </ul>
       </div>

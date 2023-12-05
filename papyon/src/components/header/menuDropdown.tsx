@@ -8,7 +8,7 @@ interface DropdownProps {
 const MenuDropdown: React.FC<DropdownProps> = ({ setShowDropdown }) => {
   return (
     <div
-      className="bg-white absolute top-[37px] ml-12 w-[500px] h-[320px]  rounded-[20px] z-[200]"
+      className="bg-white absolute top-[37px] ml-12 w-[500px] h-auto pb-5 rounded-[20px] z-[200]"
       onMouseLeave={() => {
         setShowDropdown(false);
       }}
@@ -41,7 +41,7 @@ const MenuDropdown: React.FC<DropdownProps> = ({ setShowDropdown }) => {
         </li>
         <li className=" hover:bg-[#EDEDED] w-[230px] h-[70px] flex cursor-pointer p-[10px] rounded-[14px] transition duration-500 ease-in-out">
           <Image
-            src="/footer/highlight.svg"
+            src="/naricon.svg"
             alt="girl"
             width={50}
             height={50}
@@ -57,7 +57,7 @@ const MenuDropdown: React.FC<DropdownProps> = ({ setShowDropdown }) => {
         </li>
 
         <li className=" hover:bg-[#EDEDED] w-[230px] h-[70px] flex cursor-pointer p-[10px] rounded-[14px] transition duration-500 ease-in-out">
-          <Image src="/footer/bmi.svg" alt="girl" width={50} height={50} />
+          <Image src="/buddy.svg" alt="girl" width={50} height={50} />
           <span className="flex flex-col ml-[10px] ">
             <span className="font-medium text-base  leading-6 text-[#00030F] ">
               BMI Buddy
