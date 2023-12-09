@@ -23,27 +23,27 @@ const HeaderDescription = () => {
   }, []);
 
   return (
-    <>
-      <div className="flex justify-center flex-col items-center absolute top-[250px] left-0 w-full z-[60]">
-        <div className="flex flex-col w-full justify-center items-center">
-          <h1 className="w-full md:text-[90px] font-semibold md:tracking-[-3px] text-center text-white">
+    <div className="container mx-auto">
+      <div className="flex justify-center flex-col items-center absolute md:top-[280px] top-[170px] left-0 w-full z-[60]">
+        <div className="flex flex-col w-full justify-center items-center space-y-5">
+          <h1 className="w-full md:text-[90px] text-6xl font-semibold md:tracking-[-3px] md:leading-[110px] leading-[74px] text-center text-white">
             We Make Mobile Apps{" "}
           </h1>
-          <div className="flex w-full justify-center items-center space-x-4 pl-10">
-            <h1 className="md:text-[90px] font-semibold md:tracking-[-3px] text-center text-white">
+          <div className="flex md:flex-row flex-col w-full justify-center items-center space-x-4 md:pl-10">
+            <h1 className="md:text-[90px] text-6xl font-semibold md:tracking-[-3px] text-center text-white">
               in the Field of{" "}
             </h1>
 
-            <h1>
+            <h1 className="mt-2 md:mt-0">
               <span
                 id="header-gradient"
-                className="bg-clip-text bg-gradient-to-r  from-[#C583D4] to-[#96B8F8] text-transparent md:text-[90px] font-semibold py-1 px-8 md:tracking-[-3px] "
+                className="bg-clip-text bg-gradient-to-r  from-[#C583D4] to-[#96B8F8] text-transparent md:text-[90px] text-6xl font-semibold py-1 px-8 md:tracking-[-3px] "
                 ref={el}
               ></span>
             </h1>
           </div>
         </div>
-        <p className="z-[60] text-white font-normal text-xl text-opacity-60 text-center leading-[34px] mt-7">
+        <p className="z-[60] text-white font-normal text-base md:text-xl text-opacity-60 text-center leading-[26px] md:leading-[34px] mt-7 px-2">
           Papyon Lab is a laboratory develops b2c applications focused on <br />
           usability in every area that the user touches.
         </p>
@@ -55,7 +55,7 @@ const HeaderDescription = () => {
         </div>
         <Milestones />
       </div>
-      <div className="flex justify-center items-center absolute top-28 left-0 w-full z-30">
+      <div className="md:flex hidden justify-center items-center absolute top-28 left-0 w-full z-30 ">
         <Image
           src="/images/apple.png"
           alt="phone"
@@ -64,7 +64,7 @@ const HeaderDescription = () => {
           className="border-none outline-none ring-0"
         />
       </div>
-    </>
+    </div>
   );
 };
 

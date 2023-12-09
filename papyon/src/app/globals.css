@@ -16,42 +16,73 @@
   }
 }
 
+/* Küçük ekranlardan büyük ekranlara */
+@media screen and (min-width: 768px) {
+  #header-gradient {
+    box-shadow: inset 0 0 0 2px transparent, inset 0 0 0 4px transparent,
+      inset 0 0 0 6px transparent, inset 0 0 0 8px transparent,
+      0 0 0 2px #c583d4, 0 0 0 4px #96b8f8;
+    border-radius: 90px !important;
+    text-align: center !important;
+  }
+  #line-container {
+    height: 200px;
+    overflow: hidden;
+    /* Çizgiyi dikey olarak ortalamak için gereken stil */
+    display: flex;
+    align-items: center;
+  }
 
-#header-gradient {
-  box-shadow: inset 0 0 0 2px transparent, inset 0 0 0 4px transparent,
-    inset 0 0 0 6px transparent, inset 0 0 0 8px transparent, 0 0 0 2px #c583d4,
-    0 0 0 4px #96b8f8;
-  border-radius: 90px !important;
+  #line {
+    width: 1px;
+    height: 187px;
+    /* CSS Animasyonu */
+    animation: moveDown 3s linear infinite;
+  }
+  /* CSS Animasyonu tanımı */
+  @keyframes moveDown {
+    50% {
+      transform: translateY(-100%); /* Yukarıda başlayacak */
+    }
+    50% {
+      transform: translateY(100%); /* Aşağıda sonlanacak */
+    }
+    100% {
+      transform: translateY(100%); /* Yukarıda tekrar başlayacak */
+    }
+  }
+  #contact-us {
+    margin-top: 51px !important;
+    background: url("../../public/images/button.png") no-repeat center;
+    width: 480px !important;
+    background-position: center;
+    border-radius: 75px !important;
+    height: 125px !important;
+    cursor: pointer !important;
+    z-index: 30 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 
-#line-container {
-  height: 200px; /* Çizginin görüneceği alanın yüksekliği */
-  overflow: hidden; /* Taşma durumunda içeriği gizle */
-
-  /* Çizgiyi dikey olarak ortalamak için gereken stil */
-  display: flex;
-  align-items: center;
+/* Küçük ekranlar için */
+@media screen and (max-width: 767px) {
+  
+#contact-us {
+  margin-top: 51px !important;
+  background: url("../../public/images/button.png") no-repeat center;
+  width: 300px !important;
+  background-position: center;
+  border-radius: 75px !important;
+  height: 125px !important;
+  cursor: pointer !important;
+  z-index: 30 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
-#line {
-  width: 1px; /* Çizgi genişliği */
-  height: 187px; /* Çizgi uzunluğu */
-
-  /* CSS Animasyonu */
-  animation: moveDown 3s linear infinite;
-}
-
-/* CSS Animasyonu tanımı */
-@keyframes moveDown {
-  50% {
-    transform: translateY(-100%); /* Yukarıda başlayacak */
-  }
-  50% {
-    transform: translateY(100%); /* Aşağıda sonlanacak */
-  }
-  100% {
-    transform: translateY(100%); /* Yukarıda tekrar başlayacak */
-  }
 }
 
 #content-us {
@@ -70,18 +101,4 @@
     #bb69b1,
     #c273aa
   );
-}
-
-#contact-us{
-  margin-top: 51px !important;
-  background: url("../../public/images/button.png") no-repeat center;
-  width: 480px !important;
-  background-position: center;
-  border-radius: 75px !important;
-  height: 125px !important;
-  cursor: pointer !important;
-  z-index: 30 !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
 }

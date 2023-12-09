@@ -15,9 +15,9 @@ const AppDownloads = () => {
       <div className="flex">
         <h1
           id="downloads"
-          className="bg-clip-text bg-gradient-to-r  from-[#FFFFFF] to-[#C2C2C2] text-transparent md:text-[90px] font-semibold md:leading-[111px] md:tracking-[-3px] "
+          className="bg-clip-text bg-gradient-to-r  from-[#FFFFFF] to-[#C2C2C2] text-transparent md:text-[90px] font-semibold md:leading-[111px] tracking-[-3px] leading-[86px] text-[70px]"
         ></h1>
-        <span className="bg-clip-text bg-gradient-to-r  from-[#FFFFFF] to-[#C2C2C2] text-transparent md:text-[90px] font-semibold md:leading-[111px] md:tracking-[-3px]">
+        <span className="bg-clip-text bg-gradient-to-r  from-[#FFFFFF] to-[#C2C2C2] text-transparent md:text-[90px] font-semibold md:leading-[111px] tracking-[-3px] leading-[86px] text-[70px]">
           K+
         </span>
       </div>

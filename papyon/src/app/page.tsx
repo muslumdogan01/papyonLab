@@ -9,18 +9,18 @@ import Footer from "@/components/footer/page";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col w-full bg-[#00030f] ">
-      <div className="w-full flex flex-col relative h-[878px]">
+      <div className="w-full flex flex-col relative md:h-[878px] h-96">
         <HeaderBackground />
-        <div className="container mx-auto relative">
+        <div className="w-full relative z-60">
           <HeaderDescription />
           <Header />
         </div>
       </div>
       <div className=" min-h-screen">
-        <UsersInformation/>
-        <AppInformation/>
-        <OurApps/>
-        <Footer/>
+        <UsersInformation />
+        <AppInformation />
+        <OurApps />
+        <Footer />
       </div>
     </main>
   );

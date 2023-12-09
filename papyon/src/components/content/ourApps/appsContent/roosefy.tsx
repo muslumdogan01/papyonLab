@@ -16,14 +16,14 @@ const Roosefy = () => {
         className="group/edit relative cursor-pointer h-full border-b hover:border-none py-[50px] hover:bg-opacity-10 transition duration-500 ease-in-out hover:bg-white border-white border-opacity-10  flex   justify-between items-center"
       >
           <div className="container mx-auto flex h-full justify-between items-center">
-          <h1 className="font-semibold text-[90px] leading-[111px] tracking-[-3px] group-hover/edit:from-[#D37AE9] group-hover/edit:to-[#7E36FC] bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent ">
+          <h1 className="font-semibold md:text-[90px] text-[60px] px-5 md:px-0 md:leading-[111px] leading-[74px] tracking-[-3px] group-hover/edit:from-[#D37AE9] group-hover/edit:to-[#7E36FC] bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent ">
           Roosefy
         </h1>
-        <span className="group-hover/edit:opacity-100 opacity-40 font-semibold text-[20px] leading-[24px]  bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent ">
+        <span className="group-hover/edit:opacity-100 opacity-40 font-semibold text-[20px] leading-[24px] md:flex hidden bg-clip-text bg-gradient-to-r from-[#FFFFFF]  to-[#C2C2C2] text-transparent ">
           design
         </span>
         {showModal && (
-          <div className="absolute top-1/2 left-1/2  translate -translate-x-1/2 -translate-y-1/2 w-[400px] h-[500px] z-[300] bg-white">
+          <div className="absolute top-1/2 left-1/2  translate -translate-x-1/2 -translate-y-1/2 w-[400px] h-[500px] z-[300] bg-white md:block hidden">
             <RoosefyItems/>
           </div>
         )}

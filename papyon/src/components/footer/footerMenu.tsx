@@ -5,7 +5,7 @@ const FooterMenu = () => {
     <div className="w-full flex bg-[#00030F] h-36">
       <div className="container mx-auto ">
         <div className="w-full flex justify-between items-center h-full">
-          <div className="flex">
+          <div className="md:flex hidden">
             <ul className="flex space-x-[50px]">
               <li className="text-base leading-6 opacity-70 text-white cursor-pointer hover:underline">
                 ABOUT US

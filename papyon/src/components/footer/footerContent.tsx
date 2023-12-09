@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 
 const FooterContent = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center mt-11">
+    <div className="w-full md:flex hidden flex-col justify-center items-center mt-11">
       <div className="w-[380px] flex ">
         <Image src="/footer/girl.svg" alt="girl" width={80} height={80} />
       </div>
