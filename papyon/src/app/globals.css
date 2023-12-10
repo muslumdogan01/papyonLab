@@ -15,6 +15,9 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+html, body{
+  overflow-x: hidden !important;
+}
 
 /* Küçük ekranlardan büyük ekranlara */
 @media screen and (min-width: 768px) {
@@ -71,11 +74,12 @@
   
 #contact-us {
   margin-top: 51px !important;
+  margin-bottom: 100px !important;
   background: url("../../public/images/button.png") no-repeat center;
-  width: 300px !important;
+  width: 350px !important;
   background-position: center;
   border-radius: 75px !important;
-  height: 125px !important;
+  height: 100px !important;
   cursor: pointer !important;
   z-index: 30 !important;
   display: flex !important;
@@ -102,3 +106,4 @@
     #c273aa
   );
 }
+

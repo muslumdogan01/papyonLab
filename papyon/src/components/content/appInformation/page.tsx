@@ -34,16 +34,16 @@ const AppInformation = () => {
             height={120}
             className="absolute top-[76px] -rotate-[-15deg] left-[171px]"
           />
-          <div className="absolute md:left-[100px] left-1/2 translate -translate-x-1/2 top-[170px] md:right-[58px] flex px-5 md:px-0">
-            <div className="flex w-full flex-col lg:flex-row ">
+          <div className="absolute md:left-[100px] top-[170px] md:right-[58px] flex md:flex-row flex-col">
+            <div className="flex w-full flex-col lg:flex-row">
               <div className="flex flex-col w-full lg:w-1/2">
-                <h1 className="text-[40px] md:w-[380px] w-[340px] bg-clip-text bg-gradient-to-r from-[#C583D4] to-[#96B8F8] text-transparent font-semibold leading-[49px] tracking-[-3px]">
+                <h1 className="text-[40px] w-full bg-clip-text px-6 bg-gradient-to-r from-[#C583D4] to-[#96B8F8] text-transparent font-semibold leading-[49px] tracking-[-3px]">
                   Our mobile new world.  We do fun things in 
                   this world
                 </h1>
               </div>
               <div className="flex flex-col w-full lg:w-1/2 mt-7 md:mt-0">
-                <span className="font-normal text-center w-[320px] md:w-full lg:text-xl lg:leading-[34px] bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#C2C2C2] text-transparent ">
+                <span className="font-normal  w-full lg:text-xl lg:leading-[34px] px-6 bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#C2C2C2] text-transparent ">
                   At Papyonlab, we leave our mark on the digital world by
                   creating mobile applications that make a difference. Our
                   applications, available on the App Store and Play Store, stand

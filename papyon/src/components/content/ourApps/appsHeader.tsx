@@ -4,7 +4,7 @@ import React from "react";
 const AppsHeader = () => {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col mt-[550px] md:mt-0 relative w-full justify-center items-center z-40">
+      <div className="flex flex-col mt-[550px] lg:mt-0 relative w-full justify-center items-center z-40">
         <Image
           src="/images/ourApps.png"
           alt="ourApps"

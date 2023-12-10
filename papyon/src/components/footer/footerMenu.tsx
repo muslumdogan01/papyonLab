@@ -21,7 +21,7 @@ const FooterMenu = () => {
               </li>
             </ul>
           </div>
-          <div className="flex text-white text-xl leading-8">
+          <div className="flex text-white text-xl leading-8 w-full justify-center md:justify-end">
             Made with ❤️ in Izmir, Turkey
           </div>
         </div>
