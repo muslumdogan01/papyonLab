@@ -19,7 +19,7 @@ const MenuLinkComponent: React.FC<MenuLinkComponentProps> = ({
         isOpenMenu
           ? "block transition duration-500 ease-in-out"
           : "hidden transition duration-500 ease-in-out"
-      } w-full h-screen bg-[#00030F] absolute top-[102px] transition duration-500 ease-in-out left-0`}
+      } w-full h-screen bg-[#00030F] absolute top-[92px] transition duration-500 ease-in-out left-0`}
     >
       <ul className="flex flex-col ">
         <li className="border border-white border-opacity-10 py-[30px] px-5 text-[30px] leading-9 tracking-[-3px] text-white">
