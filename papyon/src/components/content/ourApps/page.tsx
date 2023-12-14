@@ -5,10 +5,10 @@ import AppsContent from "./appsContent/appsContent";
 
 const OurApps = () => {
   return (
-    <>
+    <div>
       <AppsHeader />
       <AppsContent />
-    </>
+    </div>
   );
 };
 

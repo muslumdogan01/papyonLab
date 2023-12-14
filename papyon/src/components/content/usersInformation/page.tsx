@@ -6,7 +6,7 @@ import Founded from "./founded";
 const UsersInformation = () => {
   return (
     <div className="container mx-auto">
-      <div className="w-full flex md:flex-row flex-col justify-center items-center md:mt-32 mt-[400px] lg:space-x-[100px] md:space-x-16">
+      <div className="w-full flex md:flex-row flex-col justify-center items-center md:mt-0 mt-2 lg:space-x-[100px] md:space-x-16">
         <Founded />
         <ActiveUser />
         <AppDownloads />

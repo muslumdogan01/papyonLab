@@ -5,22 +5,31 @@ import HeaderDescription from "@/components/header/headerDesc";
 import Header from "@/components/header/page";
 import OurApps from "@/components/content/ourApps/page";
 import Footer from "@/components/footer/page";
+import Milestones from "@/components/content/usersInformation/milestones";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full bg-[#00030f] ">
-      <div className="w-full flex flex-col relative md:h-[878px] h-96">
+    <main className="flex  flex-col w-full bg-[#00030f] relative">
+      <div className="w-full  flex flex-col relative md:h-[878px] h-[600px]">
         <HeaderBackground />
         <div className="w-full relative z-60">
           <HeaderDescription />
           <Header />
         </div>
       </div>
-      <div className=" min-h-screen">
+      <div className="z-10">
+        <Milestones />
         <UsersInformation />
+      </div>
+
+      <div className=" min-h-screen z-10">
         <AppInformation />
         <OurApps />
         <Footer />
+      </div>
+      <div className="absolute top-0 left-0 -z-0 bloc md:hidden">
+        <Image src="/mobileDots.svg" alt="ourApps" width={700} height={700} />
       </div>
     </main>
   );
