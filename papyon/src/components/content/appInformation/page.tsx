@@ -9,8 +9,8 @@ const AppInformation = () => {
       <div className="md:mt-44 mt-[100px] flex w-full justify-center items-center mb-32">
         <div className="relative rounded-[50px] ">
           <motion.div
-            initial={{ borderColor: "rgba(0, 209, 255, 0.9)" }} // Başlangıç border rengi
-            animate={{ borderColor: "rgba(0, 209, 255, 0)" }} // Bitiş border rengi
+            initial={{ borderColor: "rgba(0, 209, 255, 0.9)" }} 
+            animate={{ borderColor: "rgba(0, 209, 255, 0)" }}
             transition={{
               duration: 2, // Animasyon süresi
               repeat: Infinity, // Sonsuz tekrar
@@ -21,7 +21,7 @@ const AppInformation = () => {
               borderStyle: "solid",
               borderTopColor: "2px",
               borderRightColor: "1px",
-              borderTopWidth: "2px",
+              borderTopWidth: "1px",
               borderRightWidth: "1px",
               borderTopLeftRadius: "50px",
               borderTopRightRadius: "50px",

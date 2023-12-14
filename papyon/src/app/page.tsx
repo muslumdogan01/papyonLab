@@ -11,14 +11,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex  flex-col w-full bg-[#00030f] relative">
-      <div className="w-full  flex flex-col relative md:h-[878px] h-[600px]">
+      <div className="w-full  flex flex-col relative md:h-[800px] lg:h-[750px] h-[600px]">
         <HeaderBackground />
         <div className="w-full relative z-60">
           <HeaderDescription />
           <Header />
         </div>
       </div>
-      <div className="z-10">
+      <div className="z-10 relative">
         <Milestones />
         <UsersInformation />
       </div>

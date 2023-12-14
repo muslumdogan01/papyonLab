@@ -9,6 +9,7 @@ const Milestones = () => {
           Milestones
         </h1>
       </div>
+      
       <Image
         src="/images/milestones.png"
         alt="Milestones"
