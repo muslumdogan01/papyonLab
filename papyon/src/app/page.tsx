@@ -25,6 +25,7 @@ export default function Home() {
 
       <div className=" min-h-screen z-10">
         <AppInformation />
+        <div className="h-1"></div>
         <OurApps />
         <Footer />
       </div>

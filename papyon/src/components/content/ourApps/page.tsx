@@ -5,7 +5,7 @@ import AppsContent from "./appsContent/appsContent";
 
 const OurApps = () => {
   return (
-    <div>
+    <div className="relative">
       <AppsHeader />
       <AppsContent />
     </div>
