@@ -4,7 +4,7 @@ import React from 'react'
 
 const FooterHeader = () => {
   return (
-    <div className="md:mt-[280px] flex flex-col  items-center w-full relative z-10 ">
+    <div className="md:mt-[280px] mt-[150px] flex flex-col  items-center w-full relative z-10 ">
       <Image
         src="/union.svg"
         alt="union "
@@ -21,7 +21,7 @@ const FooterHeader = () => {
 
       <div className="w-full h-full flex justify-center items-center">
         <button id="contact-us" onClick={()=>{alert('selam')}}>
-          <span className="font-normal text-[26px] leading-[40px] pb-5 text-white">
+          <span className="font-normal text-[26px] leading-[40px] pb-4 text-white">
             Contact us
           </span>
         </button>
