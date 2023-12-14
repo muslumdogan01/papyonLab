@@ -7,6 +7,7 @@ import OriaApps from "./oria";
 const AppsContent = () => {
   return (
     <div className="mt-20 w-full flex flex-col">
+      <div className="h-3"></div>
       <Roosefy />
       <BmiBuddy />
       <OriaApps />

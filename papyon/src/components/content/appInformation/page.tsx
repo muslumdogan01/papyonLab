@@ -61,7 +61,7 @@ const AppInformation = () => {
                 </h1>
               </div>
               <div className="flex flex-col w-full lg:w-1/2 mt-7 md:mt-0">
-                <span className="font-normal  w-full lg:text-xl lg:leading-[34px] px-6 bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#C2C2C2] text-transparent ">
+                <span className="font-normal  w-full lg:text-xl lg:leading-[34px] px-6 bg-clip-text bg-gradient-to-r from-[#FFFFFF] to-[#C2C2C2] text-transparent text-center md:text-left">
                   At Papyonlab, we leave our mark on the digital world by
                   creating mobile applications that make a difference. Our
                   applications, available on the App Store and Play Store, stand
