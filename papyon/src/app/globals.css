@@ -117,3 +117,16 @@ html, body{
   );
 }
 
+#top-link {
+  display: inline-block;
+  animation: jump 1s infinite alternate ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
