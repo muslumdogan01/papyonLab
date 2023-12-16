@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const AppInformation = () => {
   return (
     <div className="container mx-auto">
-      <div className="md:mt-44 mt-[100px] flex w-full justify-center items-center mb-32">
+      <div className=" flex w-full justify-center items-center mb-32">
         <div className="relative rounded-[50px] ">
           <motion.div
             initial={{ borderColor: "rgba(0, 209, 255, 0.9)" }} 

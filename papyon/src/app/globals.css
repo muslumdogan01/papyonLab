@@ -15,9 +15,7 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-html, body{
-  overflow-x: hidden !important;
-}
+
 
 @media (min-width: 340px) and 
 (max-width: 360px) { 
@@ -129,4 +127,26 @@ html, body{
   100% {
     transform: translateY(-10px);
   }
+}
+
+
+#bg-image-1,
+#bg-image-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#bg-image-1 {
+  background-image: url("/images/gradient.png");
+  z-index: 1;
+}
+
+#bg-image-2 {
+  background-image: url("/images/Dots.png");
+  z-index: 2;
 }

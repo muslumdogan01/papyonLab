@@ -7,7 +7,7 @@ const Header = () => {
 
 
   return (
-    <div id="header-wrap" className="w-full flex justify-center items-center ">
+    <div className="w-full flex justify-center items-center ">
       <HeaderMenu />
     </div>
   );
