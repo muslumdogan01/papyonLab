@@ -1,9 +1,9 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { UseScrollPosition } from "../scroll/UseScrollPosition";
 import Logo from "./logo";
 import MenuDropdown from "./menuDropdown";
 import MobileMenu from "./mobil-menu/page";
+import Link from 'next/link';
 
 const HeaderMenu = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -28,10 +28,10 @@ const HeaderMenu = () => {
             )}
           >
             <ul className="flex md:space-x-9 lg:space-x-24 ">
-              <li className="font-medium text-base leading-6 text-white cursor-pointer relative">
-                ABOUT US
+              <Link href="/about" className="font-medium text-base leading-6 text-white cursor-pointer relative">
+                <>ABOUT US</>
                 <span className="absolute top-1/2 -translate-y-1/2 left-1/2 transform -translate-x-1/2 hover:rounded-[10px] text-white z-50 w-[151px] h-11  hover:border-opacity-10 hover:border border-white hover:bg-white  hover:bg-opacity-10"></span>
-              </li>
+              </Link>
               <li
                 className="font-medium text-base leading-6 text-white cursor-pointer  relative"
                 onMouseEnter={() => setShowDropdown(true)}
@@ -59,7 +59,7 @@ const HeaderMenu = () => {
               </div>
 
               <li>
-              <Logo width={218} height={26} />
+                <Logo width={218} height={26} />
               </li>
               <li className="font-medium text-base leading-6 text-white cursor-pointer relative">
                 PAPYON BLOG
