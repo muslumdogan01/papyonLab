@@ -4,7 +4,7 @@ import HeaderImage from './headerImage'
 
 const HeaderInfo = () => {
   return (
-    <div className='mt-[200px] flex flex-col md:flex-row justify-center items-center'>
+    <div className='mt-[200px] lg:mt-[100px] flex flex-col md:flex-row justify-center items-center'>
         <HeaderText/>
         <HeaderImage/>
     </div>
