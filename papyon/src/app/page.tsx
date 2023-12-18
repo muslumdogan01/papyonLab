@@ -7,7 +7,6 @@ import OurApps from "@/components/content/ourApps/page";
 import Footer from "@/components/footer/page";
 import Milestones from "@/components/content/usersInformation/milestones";
 import Image from "next/image";
-import TopLink from "@/components/top-link/page";
 
 export default function Home() {
   return (
@@ -35,7 +34,6 @@ export default function Home() {
       <div className="absolute top-0 left-0 -z-0 bloc md:hidden">
         <Image src="/mobileDots.svg" alt="ourApps" width={700} height={700} />
       </div>
-      <TopLink/>
     </main>
   );
 }

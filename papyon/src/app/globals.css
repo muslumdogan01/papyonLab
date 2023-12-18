@@ -150,3 +150,9 @@
   background-image: url("/images/Dots.png");
   z-index: 2;
 }
+
+/* easy-mate bg-gradient */
+#easy-gradient{
+  background-image: linear-gradient(to bottom, #EBF2FC 0%, #FFFFFF 100%);
+  z-index: 0;
+}
