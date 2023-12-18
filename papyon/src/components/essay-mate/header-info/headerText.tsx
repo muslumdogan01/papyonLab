@@ -28,7 +28,7 @@ const HeaderText = () => {
             wants an AI bot to create essays.
           </p>
         </div>
-        <div className="w-full flex flex-col md:flex-row justify-center items-center mt-10">
+        <div className="w-full flex flex-col md:flex-row justify-center lg:justify-start items-center mt-10 lg:space-x-[10px]">
         <div className="flex">
         <Image src="/easy-mate/star.svg" width={21} height={21} alt="star" />
         <Image src="/easy-mate/star.svg" width={21} height={21} alt="star" />
@@ -36,9 +36,9 @@ const HeaderText = () => {
         <Image src="/easy-mate/star.svg" width={21} height={21} alt="star" />
         <Image src="/easy-mate/star2.svg" width={21} height={21} alt="star" />
         </div>
-        <span className="text-lg font-semibold leading-8 text-[#00030F] mt-[10px] ">4.6 Stars (78.9k Ratings)</span>
+        <span className="text-lg font-semibold leading-8 text-[#00030F] mt-[10px] lg:mt-0 ">4.6 Stars (78.9k Ratings)</span>
         </div>
-        <div className="flex w-full justify-center items-center mt-10 space-x-[15px]">
+        <div className="flex w-full justify-center lg:justify-start items-center mt-10 space-x-[15px]">
         <Image src="/easy-mate/apple.svg" width={165} height={60} alt="star" />
         <Image src="/easy-mate/playstore.svg" width={165} height={60} alt="star" />
         </div>
