@@ -8,7 +8,7 @@ const HeaderText = () => {
         <h5 className="text-base font-semibold leading-6 text-[#0A84FF] ">
           EssayMate
         </h5>
-        <div className="flex flex-col mt-[10px] text-[50px] md:text-6xl leading-[70px] md:leading-[74px] font-semibold tracking-[-3px] text-center lg:text-left">
+        <div className="flex flex-col mt-[10px] text-[50px] md:text-6xl leading-[70px] md:leading-[74px] font-semibold -tracking-3 text-center lg:text-left">
           <h1 className="text-black">AI Essay Writer:</h1>
           <h1 className="bg-clip-text bg-gradient-to-r from-[#D37AE9] to-[#7E36FC] text-transparent ">
             Write 5x Faster <br className="block md:hidden" /> Essays{" "}
@@ -19,7 +19,7 @@ const HeaderText = () => {
           </h1>
         </div>
         <div className="w-[333px] md:w-full mt-5">
-          <p className="font-normal text-lg leading-8 text-center lg:text-left">
+          <p className="font-normal text-lg leading-8 text-center lg:text-left text-opacity-80">
             The AI Essay Writer is an essay writing assistant designed to
             conduct research on essay topic, generate essays with varied tones
             and styles and edit the generated essays using a text editor. It
