@@ -23,7 +23,7 @@ const HorizontalComponent = () => {
           slideShadows: true,
         }}
         scrollbar={true}
-        navigation={true}
+      
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >

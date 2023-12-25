@@ -12,7 +12,7 @@ const Testimonial = () => {
           Testimonial
         </h1>
         <p className="font-semibold text-[40px] leading-[49px] -tracking-3 text-center mt-[10px] ">
-          What people are saying?
+          What people are <br className="block md:hidden" /> saying?
         </p>
       </div>
       <div className="hidden md:flex justify-center mt-[30px] space-x-[30px] ">

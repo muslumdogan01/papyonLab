@@ -16,15 +16,12 @@
   }
 }
 
-
-@media (min-width: 340px) and 
-(max-width: 360px) { 
-#samsung{
-  margin-top: 200px !important;
-}
-#ourApps{
-
-}
+@media (min-width: 340px) and (max-width: 360px) {
+  #samsung {
+    margin-top: 200px !important;
+  }
+  #ourApps {
+  }
 }
 
 /* Küçük ekranlardan büyük ekranlara */
@@ -75,26 +72,25 @@
     justify-content: center !important;
     align-items: center !important;
   }
+
 }
 
 /* Küçük ekranlar için */
 @media screen and (max-width: 767px) {
-  
-#contact-us {
-  margin-top: 51px !important;
-  margin-bottom: 100px !important;
-  background: url("../../public/images/button.png") no-repeat center;
-  width: 350px !important;
- 
-  border-radius: 75px !important;
-  height: 100px !important;
-  cursor: pointer !important;
-  z-index: 30 !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-}
+  #contact-us {
+    margin-top: 51px !important;
+    margin-bottom: 100px !important;
+    background: url("../../public/images/button.png") no-repeat center;
+    width: 350px !important;
 
+    border-radius: 75px !important;
+    height: 100px !important;
+    cursor: pointer !important;
+    z-index: 30 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 
 #content-us {
@@ -114,6 +110,20 @@
     #c273aa
   );
 }
+#works .swiper-slide {
+  width: 100% !important;
+}
+#works .swiper-slide {
+  width: 100% !important;
+  height: 290px !important;
+  object-fit: cover;
+  border-radius: 20px !important;
+  border: 1px solid rgba(99, 134, 255, 0.2);
+  background-color: white !important;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px -7px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
 
 #top-link {
   display: inline-block;
@@ -128,7 +138,6 @@
     transform: translateY(-10px);
   }
 }
-
 
 #bg-image-1,
 #bg-image-2 {
@@ -152,7 +161,27 @@
 }
 
 /* easy-mate bg-gradient */
-#easy-gradient{
-  background-image: linear-gradient(to bottom, #EBF2FC 0%, #FFFFFF 100%);
+#easy-gradient {
+  background-image: linear-gradient(to bottom, #ebf2fc 0%, #ffffff 100%);
   z-index: 0;
+}
+
+
+#customShadow{
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px -7px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+#rotate {
+  animation: rotate 9s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

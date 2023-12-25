@@ -16,6 +16,10 @@ const config: Config = {
       letterSpacing: {
         '-3': '-0.03em', 
       },
+      boxShadow: {
+        'custom-drop': '0px 10px 30px 0px rgba(0, 0, 0, 0.1)',
+        'custom-inner': 'inset 0px -7px 3px 0px rgba(0, 0, 0, 0.1)',
+      },
     },
   },
   plugins: [],

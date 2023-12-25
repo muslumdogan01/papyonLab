@@ -1,9 +1,13 @@
 import Editor from "@/components/essay-mate/aiEditor/page";
 import AiInformation from "@/components/essay-mate/aiInformation/page";
+import Faq from "@/components/essay-mate/faq/page";
 import HeaderInfo from "@/components/essay-mate/header-info/page";
 import Header from "@/components/essay-mate/header/page";
+import HowItWork from "@/components/essay-mate/howItWork/page";
 import Research from "@/components/essay-mate/research/page";
 import Testimonial from "@/components/essay-mate/testimonial/page";
+import FooterMenu from "@/components/footer/footerMenu";
+import Footer from "@/components/footer/page";
 import Image from "next/image";
 import React from "react";
 
@@ -23,7 +27,11 @@ const EssayMate = () => {
         <AiInformation/>
         <Editor/>
         <Testimonial/>
+        <HowItWork/>
+        <Faq/>
+       
       </div>
+      <FooterMenu/>
     </div>
   );
 };
