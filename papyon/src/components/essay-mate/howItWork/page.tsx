@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-duplicate-props */
 "use client";
 import React, { useRef, useState } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
@@ -18,17 +19,25 @@ SwiperCore.use([Navigation]);
 const HowItWork = () => {
   const swiperRef = useRef<SwiperCore>(null);
 
-  // const handleNext = () => {
-  //   if (swiperRef.current && swiperRef.current.swiper) {
-  //     swiperRef.current.swiper.slideNext();
-  //   }
-  // };
+  const handleNext = () => {
+    // @ts-ignore
+    // eslint-disable-next-line no-param-reassign
+    if (swiperRef.current && swiperRef.current.swiper) {
+      // @ts-ignore
+      // eslint-disable-next-line no-param-reassign
+      swiperRef.current.swiper.slideNext();
+    }
+  };
 
-  // const handlePrev = () => {
-  //   if (swiperRef.current && swiperRef.current.swiper) {
-  //     swiperRef.current.swiper.slidePrev();
-  //   }
-  // };
+  const handlePrev = () => {
+    // @ts-ignore
+    // eslint-disable-next-line no-param-reassign
+    if (swiperRef.current && swiperRef.current.swiper) {
+      // @ts-ignore
+      // eslint-disable-next-line no-param-reassign
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
 
   // Create array with 500 slides
   //   const [slides, setSlides] = useState(
@@ -36,9 +45,12 @@ const HowItWork = () => {
   //   );
 
   return (
-    <div   className="container mx-auto">
-      <div id="settingsWork" className=" w-full mt-[100px] md:mt-[173px] flex md:flex-row flex-col justify-center items-center space-x-[30px] overflow-x-hidden overflow-y-hidden">
-        <div  className="md:w-1/3 w-full text-center md:text-left px-[32px] md:px-0 flex flex-col ">
+    <div className="container mx-auto">
+      <div
+        id="settingsWork"
+        className=" w-full mt-[100px] md:mt-[173px] flex md:flex-row flex-col justify-center items-center space-x-[30px] overflow-x-hidden overflow-y-hidden"
+      >
+        <div className="md:w-1/3 w-full text-center md:text-left px-[32px] md:px-0 flex flex-col ">
           <h1 className="text-black font-semibold text-[40px] -tracking-3 leading-[49px] ">
             How it Work
           </h1>
@@ -48,7 +60,7 @@ const HowItWork = () => {
           </p>
           <div className="mt-5 space-x-5 hidden md:block">
             <button
-              // onClick={handlePrev}
+              onClick={handlePrev}
               className="group/left rounded-[50px] border py-[13px] px-[38px] border-[#6386FF33] border-opacity-20 bg-white "
             >
               <span className="group-hover/left:opacity-30">
@@ -56,11 +68,11 @@ const HowItWork = () => {
               </span>
             </button>
             <button
-              // onClick={handleNext}
+              onClick={handleNext}
               className="group/right rounded-[50px] border py-[13px] px-[38px] border-[#6386FF33] border-opacity-20 bg-white"
             >
               <span className="group-hover/right:opacity-30">
-                <ArrowRight/>
+                <ArrowRight />
               </span>
             </button>
           </div>
@@ -72,15 +84,18 @@ const HowItWork = () => {
             centeredSlides={true}
             spaceBetween={30}
             navigation={true}
-            // ref={swiperRef}
-            // navigation={{
-            //   nextEl: ".swiper-button-next",
-            //   prevEl: ".swiper-button-prev",
-            // }}
+            // @ts-ignore
+            // eslint-disable-next-line no-param-reassign
+            ref={swiperRef}
+            // @ts-ignore
+            // eslint-disable-next-line no-param-reassign
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
             initialSlide={1}
             virtual
           >
-
             <SwiperSlide>
               <div className="mt-[50px] px-[30px] ">
                 {" "}
