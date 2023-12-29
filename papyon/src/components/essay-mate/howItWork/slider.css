@@ -26,5 +26,7 @@
 #works .swiper-slide:last-child{
   background-color: transparent!important;
   box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
 }
 /* #settingsWork  swiper-button-prev swiper-button-next*/
