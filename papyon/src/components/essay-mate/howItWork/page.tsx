@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 "use client";
 import React, { useRef, useState } from "react";
+import { useMemo, useCallback } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -19,7 +20,11 @@ SwiperCore.use([Navigation]);
 const HowItWork = () => {
   const swiperRef = useRef<SwiperCore>(null);
 
-  const handleNext = () => {
+  // const toggleAccordion = useCallback(() => {
+  //   setIsOpen(prevIsOpen => !prevIsOpen);
+  // }, []);
+
+  const handleNext = useCallback(() => {
     // @ts-ignore
     // eslint-disable-next-line no-param-reassign
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -27,9 +32,9 @@ const HowItWork = () => {
       // eslint-disable-next-line no-param-reassign
       swiperRef.current.swiper.slideNext();
     }
-  };
+  }, []);
 
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     // @ts-ignore
     // eslint-disable-next-line no-param-reassign
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -37,7 +42,7 @@ const HowItWork = () => {
       // eslint-disable-next-line no-param-reassign
       swiperRef.current.swiper.slidePrev();
     }
-  };
+  }, []);
 
   // Create array with 500 slides
   //   const [slides, setSlides] = useState(
@@ -77,7 +82,7 @@ const HowItWork = () => {
             </button>
           </div>
         </div>
-        <div id="works" className="md:w-3/5 w-full max-h-96">
+        <div id="works" className="md:w-3/5 w-full  md:max-h-96">
           <Swiper
             modules={[Virtual, Navigation, Pagination]}
             slidesPerView={3}
@@ -153,6 +158,7 @@ const HowItWork = () => {
                 </h1>
               </div>
             </SwiperSlide>
+            <SwiperSlide></SwiperSlide>
           </Swiper>
         </div>
       </div>

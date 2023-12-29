@@ -23,5 +23,8 @@
   box-shadow: inset 0px -7px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
-
+#works .swiper-slide:last-child{
+  background-color: transparent!important;
+  box-shadow: none !important;
+}
 /* #settingsWork  swiper-button-prev swiper-button-next*/

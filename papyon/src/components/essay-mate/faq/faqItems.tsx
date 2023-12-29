@@ -14,7 +14,7 @@ const FaqItems = ({ data, key }: any) => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 20, maxHeight: 0 }}
-            animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -60, maxHeight: isOpen ? "500px" : 0 }}
+            animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 20, maxHeight: isOpen ? "500px" : 0 }}
             transition={{ duration: 0.3 }}
           >
             <p className="mb-5 px-5 pb-5 bg-[#F1F8FB]">{data.answer}</p>
