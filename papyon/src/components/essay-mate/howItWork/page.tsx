@@ -158,7 +158,9 @@ const HowItWork = () => {
                 </h1>
               </div>
             </SwiperSlide>
-            <SwiperSlide id="lastChild"></SwiperSlide>
+            <SwiperSlide id="deneme">
+              <div className="mt-[50px] px-[30px] "></div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>

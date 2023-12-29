@@ -50,13 +50,13 @@
   /* CSS Animasyonu tanımı */
   @keyframes moveDown {
     50% {
-      transform: translateY(-100%); /* Yukarıda başlayacak */
+      transform: translateY(-100%); 
     }
     50% {
-      transform: translateY(100%); /* Aşağıda sonlanacak */
+      transform: translateY(100%); 
     }
     100% {
-      transform: translateY(100%); /* Yukarıda tekrar başlayacak */
+      transform: translateY(100%);
     }
   }
   #contact-us {

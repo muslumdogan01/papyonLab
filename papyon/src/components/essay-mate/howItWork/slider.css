@@ -1,5 +1,4 @@
 #works .swiper {
-
 }
 
 #works .swiper-slide {
@@ -9,7 +8,6 @@
   width: 100%;
   /* Center slide text vertically */
   display: flex;
-
 }
 
 #works .swiper-slide {
@@ -23,10 +21,21 @@
   box-shadow: inset 0px -7px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
-#lastChild{
-  background-color: transparent!important;
-  box-shadow: none !important;
-  border: none !important;
-  outline: none !important;
-}
 /* #settingsWork  swiper-button-prev swiper-button-next*/
+@media screen and (max-width: 767px) {
+  #works .swiper {
+    width: 100% !important;
+  }
+  #works .swiper-slide:last-child {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #deneme {
+    display: none !important;
+  }
+}
