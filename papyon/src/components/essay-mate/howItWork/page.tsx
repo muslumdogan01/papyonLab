@@ -158,7 +158,7 @@ const HowItWork = () => {
                 </h1>
               </div>
             </SwiperSlide>
-            <SwiperSlide></SwiperSlide>
+            <SwiperSlide id="lastChild"></SwiperSlide>
           </Swiper>
         </div>
       </div>
