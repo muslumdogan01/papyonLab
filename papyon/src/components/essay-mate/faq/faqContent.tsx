@@ -13,7 +13,7 @@ const FaqContent = () => {
       id="deneme"
       className="w-full flex justify-center items-center relative mt-[30px] md:mb-[160px] mb-[60px] "
     >
-      <div className="w-[840px] flex flex-col rounded-[20px] border border-[#6386FF33] shadow-custom-drop bg-white md:py-[50px] md:px-10 py-[10px] px-[10px] ">
+      <div className="w-[840px] flex flex-col rounded-[20px] border border-[#6386FF33] shadow-custom-drop bg-white md:pt-[50px] md:pb-[30px] md:px-10 py-[10px] px-[10px] ">
         {faqsData.map((data) => {
           return <FaqItems data={data} key={data.id} />;
         })}
