@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 "use client";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useMemo, useCallback } from "react";
 import { Virtual, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,10 +19,23 @@ SwiperCore.use([Navigation]);
 
 const HowItWork = () => {
   const swiperRef = useRef<SwiperCore>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // const toggleAccordion = useCallback(() => {
-  //   setIsOpen(prevIsOpen => !prevIsOpen);
-  // }, []);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth < 768);
+
+      const updateIsMobile = () => {
+        setIsMobile(window.innerWidth < 768);
+      };
+
+      window.addEventListener("resize", updateIsMobile);
+
+      return () => {
+        window.removeEventListener("resize", updateIsMobile);
+      };
+    }
+  }, []);
 
   const handleNext = useCallback(() => {
     // @ts-ignore
@@ -85,9 +98,9 @@ const HowItWork = () => {
         <div id="works" className="md:w-3/5 w-full  md:max-h-96">
           <Swiper
             modules={[Virtual, Navigation, Pagination]}
-            slidesPerView={3}
-            centeredSlides={true}
-            spaceBetween={30}
+            slidesPerView={isMobile ? 1 : 3}
+            centeredSlides={!isMobile}
+            spaceBetween={isMobile ? 20 : 30}
             navigation={true}
             // @ts-ignore
             // eslint-disable-next-line no-param-reassign
@@ -157,9 +170,6 @@ const HowItWork = () => {
                   Generate outline or jump into essay writing step.
                 </h1>
               </div>
-            </SwiperSlide>
-            <SwiperSlide id="deneme">
-              <div className="mt-[50px] px-[30px] "></div>
             </SwiperSlide>
           </Swiper>
         </div>

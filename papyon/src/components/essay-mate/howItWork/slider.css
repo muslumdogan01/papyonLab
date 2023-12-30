@@ -1,6 +1,5 @@
-#works .swiper {
-}
 
+  
 #works .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -26,16 +25,23 @@
   #works .swiper {
     width: 100% !important;
   }
-  #works .swiper-slide:last-child {
+  /* #works .swiper-slide:last-child {
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
     background: transparent !important;
+
   }
+   */
 }
 
 @media screen and (min-width: 768px) {
-  #deneme {
-    display: none !important;
-  }
+  /* #deneme {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+  } */
+
+
 }
