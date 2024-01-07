@@ -79,7 +79,7 @@ const AiInformation = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center  lg:pl-[70px] lg:pb-[50px] py-[50px] px-[22px] ">
+        <div className="flex flex-col   lg:pl-[70px] lg:pb-[50px] py-[50px] px-[22px] ">
           <h1 className="text-[40px] font-semibold leading-[49px] -tracking-3 text-black lg:text-left text-center z-40">
             Ai Essay Export <br />
             (PDF or Word)
