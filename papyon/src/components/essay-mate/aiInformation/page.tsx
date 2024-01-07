@@ -60,13 +60,14 @@ const AiInformation = () => {
       <div className="relative shadow-xl rounded-[30px] md:w-full w-[358px] 2xl:w-[80%] mt-5 lg:mt-0 md:border border-[#6386FF33] border-opacity-20   bg-white ">
       <div className="">
       <div className="hidden md:block ">
-          <Image
-            src="/easy-mate/aiDocsExport.svg"
-            layout="fill"
-            objectFit="cover"
-            alt="essay"
-            className="absolute top-0 left-0 z-20 md:block hidden h-full w-full"
-          />
+      <Image
+          src="/easy-mate/aiDots2.svg"
+          layout="fill"
+          objectFit="cover"
+          alt="essay"
+          className="absolute top-0  p-5 md:block hidden"
+        />
+          
 
           <div className=" justify-center mt-[124px] xl:flex hidden z-20">
             <Image
